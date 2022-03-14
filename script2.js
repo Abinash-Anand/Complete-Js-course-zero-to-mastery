@@ -101,3 +101,32 @@ const calcTip = function (bill) {
 const bills = [125, 555, 44];
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log(bills, tips);
+
+//challenge
+//aim- to print the name and the no of friends and finally the best friend
+const friends = ["micheal", "jay", "gween"];
+const jonas = {
+  name: "jonas",
+  age: 30,
+  friends: ["micheal", "jay", "gween"],
+};
+const bfName = prompt("Name of jonas's best friend");
+console.log(
+  `${jonas.name} has ${friends.length} friends, and his best friend is called ${friends[bfName]}`
+);
+
+//javascript objects
+//object method
+
+const abinash = {
+  name: "Abinash",
+  surname: "Anand",
+  rollNo: 4,
+  prn: "2014110844",
+  hobby: "Wb development",
+  friend: ["aayush", "ansh", "deepak", "hartej"],
+  calcAge: function () {
+    console.log(this);
+    return 2037 - this.birthYear;
+  },
+};
